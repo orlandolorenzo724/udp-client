@@ -15,7 +15,7 @@
  */
 void print_error(char *message, enum error_gravity gravity) {
     printf("%s: %s", convert_error_gravity(gravity), message);
-    exit(EXIT_SUCCESS);
+    exit(EXIT_FAILURE);
 }
 
 /**

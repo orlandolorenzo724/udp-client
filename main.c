@@ -8,9 +8,6 @@ int main(int argc, char *argv[]) {
     }
 
     time_t time = run(argv[1], atoi(argv[2]));
-    char *time_c = ctime((const time_t *) &time);
-    printf("%s\n", time_c);
-
     set_time(time);
 
     return 0;
